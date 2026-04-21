@@ -1,0 +1,149 @@
+<html> 
+<head> 
+</head> 
+
+<body style ="background-color : blue"> 
+<marquee behavior ="scroll" direction ="up"><font size ="60"><font color ="orange"> DATA WAREHOUSE , DATA MINING</font></marquee><br> 
+<div style ="background-color : white"><h2> 
+ 
+<nav>
+<a href="C:\Users\Admin\Downloads\dwhs.html#dwh"> DATA WAREHOUSE </a>| 
+ 
+<a href="C:\Users\Admin\Downloads\dwhs.html#olap"> OLAP </a>| 
+<a href="C:\Users\Admin\Downloads\dwhs.html#datamining"> DATA MINING </a>| 
+<a href="C:\Users\Admin\Downloads\dwhs.html#others"> OTHERS </a>
+</nav></h2> 
+ 
+</div> 
+<br><br> 
+<section id ="dwh" style ="background-color :white"> 
+Data warehouse and data mining <br> 
+<ul type ="square"><li> 
+	A data warehouse or dwh performs just query + analysis , dwh is essentially subject oriented , non volatile , integrated ., time variant ,<br> 
+ historical data , advocates BI , foll. Differences between a dwh and oltp database : <br> 
+<table width ="60%" border ="1"> 
+<thead><tr><th> 
+Dwh</th> <th>  	Oltp </th></tr></thead> 
+
+
+<tbody> 
+<tr><td> 
+
+Query + analysis </td><td> 	Transactions</td></tr> <tr><td> 
+De normalized tables </td><td> 	Normalized tables</td></tr><tr><td> 
+Historical data </td><td> 	Transient data </td></tr><tr><td> 
+Advocates BI </td><td> 	Transactions </td></tr><tr><td> 
+Slice + dice data </td><td> 	Unlike </td></tr><tr><td> 
+Roll up data , drill down</td><td>  	Unlike </td></tr><tr><td> 
+Real time , federated , distributed </td><td> 	Data marts</td></tr><tr><td>  
+e.gs Erwin , cognos , power builder , informatica </td><td> 	e.gs data marts</td></tr><tr><td>  
+OLAP  based on dwh performs faster data indexing </td><td> 	Unlike</td></tr></tbody></table> 
+<br> </li> 
+<li>  
+	A dwh has a 3 tier layered architecture that has foll layers ----<ul type ="round"> 
+<li>  bottom layer has centralized RDBMS  servers and MDDBMS  that have parallel processing and improved scalability </li> 
+<li> middle layer has OLAP  servers </li> 
+<li>  top layer has user programs that interact with OLAP  servers </li></ul> 
+</li> 
+</ul> 
+<br> 
+<br> 
+<a target="_blank" href="https://www.geeksforgeeks.org/dbms/multi-tier-architecture-of-data-warehouse/"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20251028161925525553/other_sources.webp" alt ="g" width ="250" height ="250"></a> 
+<br></section> 
+<br><br> 
+<section id ="olap" style ="background-color :white"> 
+<ol type ="1"> 
+<li> 	Olap --- query + analysis --- faster indexing to precomputed summarized data ---- historical data --- de normalized tables ----- operational intelligence <br> 
+– slice + dice data – roll up data , drill down --- olap servers --- rolap, molap etc , rolap more scalable less flexible than molap<br> 
+ ---- olap e.gs Erwin , cognos , power builder , informatica ---- olap in conformity of FASMI  principles </li> 
+<li> 
+	Olap servers consist of rolap , molap, holap.rolap more scalable , less flexible than molap. <br> 
+Molap where if no of dimensions of data cubes >3 are poly cubes & storage in  array multi – dimensional storage search engines .<br> 
+ molap less scalable more flexible than rolap <br> 
+Holap includes higher scalability of rolap and higher flexibility of molap servers <br><br></li> 
+
+<li> 
+
+	Olap operations on multi – dimensional databases include :<br> 
+<ul type ="disc"> 
+<li>  
+Roll up --- from low to high level abstraction In generalization </li> 
+<li> 
+drill down ---- from high to low level abstraction In specialization</li> 
+<li> 
+Slice and dice data --- performs projection on dimensions of data cubes </li> 
+<li> 
+Pivot data --- rotate and cross tabulate data </li> 
+<li> 
+Sort data , select nominal attributes </li></ul> 
+</li> 
+</ol> 
+<br><br> 
+<figure> 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMAIuJs4wUYWpvLxnR2ITcnypSANDL1EUaA&s" alt="g" width ="350" height ="350"> 
+<figcaption><a target="_blank" href="https://cci.drexel.edu/faculty/song/courses/info%20607/tutorial_OLAP/MOLAP_sub.htm">https://cci.drexel.edu/faculty/song/courses/info%20607/tutorial_OLAP/MOLAP_sub.htm</a> 
+</figcaption></figure> 
+<br></section> 
+
+<br><br> 
+<section id ="datamining" style ="background-color :white"> 
+While data mining deals with off line structured text and numeric data where patterns matched , <br> 
+web mining deals with online unstructured and semi structured text and numeric data where patterns not matched .<br> 
+ web usage mining where web data stored in web logs , web content mining that deals with semi structured hyper links of www and <br> 
+web structure mining that deals with page layout of www. Challenges in web mining ---- data segmentation <br><br> 
+
+Types of data mining : <br> 
+<table width ="60%" border="1"> 
+<tr><td> 
+Data characterization </td><td> 	Target attributes of a data sample / population </td></tr> 
+
+<tr><td> 
+Association rule mining </td><td> 	Finds freq patterns + correlated data and uses support endowed with a support count , <br> 
+confidence where antecedent foll consequent & generic measure lift ,<br> 
+ that sees rule interestingness ,0<lift <1. All strong association rules are not interesting and <br> 
+correlation  does not imply causation . the Apriori property states <br> 
+ mean of sum of sequential patterns smaller than sequential subpatterns . the Apriori algorithm uses join + prune ,<br> 
+ where in join , link each of k +1 items from k data to itself , in prune , iterates in k no of passes </td></tr> 
+
+
+<tr><td> 
+
+Classification </td><td>  	Discrete unordered data involves and foll grouping of similar data . <br> unlike eager classifiers , lazy classifiers =unsupervised learning<br> 
+ where target attributes / end result not explicit . unlike eager classifiers , lazy classifiers involve complex data e.gs of eager classifiers ---- decision  trees<br> 
+ e.gs of lazy classifiers – case based reasoning </td></tr> 
+
+
+<tr><td> 
+
+Regression </td><td>  	e.gs of past .linear regression --- a st line between 1 predictor and 1 response variables and non linear regression –<br> 
+ a quadratic equation between 2 / more predictors and 1 response variables</td></tr> 
+
+<tr><td>  
+
+Outliers analysis </td><td> 	Regression is preferred than clustering analysis </td></tr></table> 
+<br></section> 
+
+<br><br> 
+
+<section id ="others" style ="background-color :white"> 
+decision trees <br> 
+<a target="_blank" href="https://www.geeksforgeeks.org/machine-learning/decision-tree/"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20250107141217134593/Decision-Tree.webp" alt="g" width="350" height="350"></a> 
+<br><br> 
+</section> 
+<br><br> 
+<footer> 
+<font color ="white"> 
+<a target="_blank" href="mailTo:ratulxx@gmail.com">ratulxx@gmail.com</a> 
+</font> 
+</footer> 
+<br></body> 
+</html>
+
+
+
+
+ 
+
+
+ 
+
